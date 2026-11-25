@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ZAP | Pastelería y panadería tradicional</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      :root { --crema:#fff4ea; --chicle:#ffc8dd; --fresa:#ff7fa8; --cereza:#e0283e; --choco:#4a2418; }
+
+      .bg-crema { background-color: var(--crema); }
+      .bg-chicle { background-color: var(--chicle); }
+      .bg-fresa { background-color: var(--fresa); }
+      .bg-cereza { background-color: var(--cereza); }
+      .bg-choco { background-color: var(--choco); }
+      .bg-fresa\/60 { background-color: color-mix(in srgb, var(--fresa) 60%, transparent); }
+      .bg-choco\/50 { background-color: color-mix(in srgb, var(--choco) 50%, transparent); }
+
+      .text-crema { color: var(--crema); }
+      .text-chicle { color: var(--chicle); }
+      .text-cereza { color: var(--cereza); }
+      .text-choco { color: var(--choco); }
+      .hover\:text-cereza:hover { color: var(--cereza); }
+
+      .border-choco { border-color: var(--choco); }
+      .border-chicle\/30 { border-color: color-mix(in srgb, var(--chicle) 30%, transparent); }
+      .focus\:ring-chicle:focus { --tw-ring-color: var(--chicle); }
+
+      .font-display { font-family: "Fredoka", sans-serif; }
+      .font-body { font-family: "Nunito", sans-serif; }
+
+      .sombra { box-shadow: 5px 5px 0 var(--choco); }
+      .sombra-sm { box-shadow: 3px 3px 0 var(--choco); }
+      .hover\:shadow-none:hover { box-shadow: none; }
+    </style>
+  </head>
+  <body class="bg-crema text-choco font-body antialiased">
+    <!-- Barra superior -->
+    <div class="bg-choco text-chicle text-sm px-4 py-2 flex flex-wrap justify-center sm:justify-between gap-x-6 gap-y-1 max-w-none">
+      <!-- Sustituye por tus horarios reales -->
+      <span>Lun. a vie. 7–13 h y 17–19 h · Sáb. y dom. 7–13:30 h</span>
+      <span class="flex gap-4"><a href="#" class="hover:text-white">Instagram</a><a href="#" class="hover:text-white">Facebook</a></span>
+    </div>
+
+    <!-- Navegación -->
+    <header class="bg-chicle border-b-2 border-choco sticky top-0 z-10">
+      <nav class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+        <a href="#" class="font-display font-bold text-3xl text-cereza tracking-wide">ZAP</a>
+        <div class="hidden md:flex gap-7 font-semibold">
+          <a href="#inicio" class="hover:text-cereza transition">Inicio</a>
+          <a href="#especialidades" class="hover:text-cereza transition">Productos</a>
+          <a href="#nosotros" class="hover:text-cereza transition">Nosotros</a>
+        </div>
+        <a href="#contacto" class="bg-cereza text-white font-display font-semibold px-5 py-2 rounded-full border-2 border-choco sombra-sm hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition">
+          Encargar
+        </a>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section id="inicio" class="bg-fresa px-4 pt-16 pb-24 text-center relative" style =" background-image: url('img/fondo.jpg'); background-size: cover; background-position: center;">
+      <div class="max-w-2xl mx-auto">
+        <span class="inline-block -rotate-3 bg-white text-choco font-display font-semibold px-4 py-1.5 rounded-full border-2 border-choco sombra-sm mb-6">
+          Since 1850
+        </span>
+        <h1 class="font-display font-bold text-5xl md:text-6xl leading-tight text-white drop-shadow-[3px_3px_0_#4a2418] mb-5">
+          Pastelería y panadería tradicional
+        </h1>
+        <p class="text-xl text-choco font-semibold mb-8">Especialidades artesanales, hechas cada mañana.</p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="#contacto" class="bg-white font-display font-semibold px-7 py-3 rounded-full border-2 border-choco sombra hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition">
+            Encargar una tarta
+          </a>
+          <a href="#especialidades" class="bg-cereza text-white font-display font-semibold px-7 py-3 rounded-full border-2 border-choco sombra hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition">
+            Nuestros productos
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Especialidades -->
+    <section id="especialidades" class="py-16 px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="font-display font-bold text-4xl text-center mb-2">Especialidades artesanales</h2>
+        <p class="text-center text-lg mb-10">Sabores con historia, recetas con alma.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Cambia el emoji por una foto real de cada servicio -->
+          <a href="#contacto" class="bg-white border-2 border-choco rounded-3xl p-6 sombra hover:-translate-y-1 transition block">
+            <div class="h-32 rounded-2xl bg-chicle grid place-items-center text-6xl mb-4">☕</div>
+            <h3 class="font-display font-semibold text-xl mb-1">Cafetería</h3>
+            <p class="text-sm">Siéntate a probar lo recién hecho.</p>
+          </a>
+          <a href="#contacto" class="bg-white border-2 border-choco rounded-3xl p-6 sombra hover:-translate-y-1 transition block">
+            <div class="h-32 rounded-2xl bg-fresa/60 grid place-items-center text-6xl mb-4">🎂</div>
+            <h3 class="font-display font-semibold text-xl mb-1">Tartas personalizadas</h3>
+            <p class="text-sm">Diseñadas a tu gusto para cada celebración.</p>
+          </a>
+          <a href="#contacto" class="bg-white border-2 border-choco rounded-3xl p-6 sombra hover:-translate-y-1 transition block">
+            <div class="h-32 rounded-2xl bg-chicle grid place-items-center text-6xl mb-4">🥐</div>
+            <h3 class="font-display font-semibold text-xl mb-1">Eventos</h3>
+            <p class="text-sm">Repostería y pastelería para bodas, bautizos y fiestas.</p>
+          </a>
+          <a href="#contacto" class="bg-white border-2 border-choco rounded-3xl p-6 sombra hover:-translate-y-1 transition block">
+            <div class="h-32 rounded-2xl bg-fresa/60 grid place-items-center text-6xl mb-4">🍞</div>
+            <h3 class="font-display font-semibold text-xl mb-1">Restauración y profesionales</h3>
+            <p class="text-sm">Pan y dulces para hoteles y restaurantes.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nosotros -->
+    <section id="nosotros" class="py-16 px-4 bg-chicle border-y-2 border-choco">
+      <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <!-- Sustituye este bloque por una foto vertical real -->
+        <div class="h-80 md:h-96 rounded-3xl bg-fresa border-2 border-choco sombra grid place-items-center text-8xl rotate-2">🧁</div>
+        <div>
+          <p class="font-semibold mb-2">Sobre nosotros</p>
+          <h2 class="font-display font-bold text-4xl mb-4">Hay recetas que se guardan en libros, y otras en el corazón</h2>
+          <p class="mb-6 max-w-prose">
+            ZAP es un obrador familiar donde cada día se amasa, se hornea y se decora a mano. Escribe aquí tu historia: quién empezó, cuántas generaciones lleváis y cuál es vuestro producto insignia.
+          </p>
+          <a href="#contacto" class="inline-block bg-cereza text-white font-display font-semibold px-6 py-3 rounded-full border-2 border-choco sombra-sm hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition">
+            Conócenos
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto / encargos -->
+    <section id="contacto" class="py-16 px-4 bg-fresa border-t-2 border-choco">
+      <div class="max-w-lg mx-auto">
+        <h2 class="font-display font-bold text-4xl text-center mb-2 text-white drop-shadow-[2px_2px_0_#4a2418]">Encarga tu tarta</h2>
+        <p class="text-center font-semibold mb-6">Cuéntanos qué necesitas y te respondemos.</p>
+        <form class="p-6 bg-crema border-2 border-choco rounded-3xl sombra space-y-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label for="fecha" class="block text-sm font-semibold mb-1">Fecha</label>
+              <input type="date" id="fecha" required class="w-full px-3 py-2 bg-white border-2 border-choco rounded-xl focus:outline-none focus:ring-4 focus:ring-chicle" />
+            </div>
+            <div>
+              <label for="raciones" class="block text-sm font-semibold mb-1">Raciones</label>
+              <select id="raciones" class="w-full px-3 py-2 bg-white border-2 border-choco rounded-xl focus:outline-none focus:ring-4 focus:ring-chicle">
+                <option value="6">6 personas</option>
+                <option value="12">12 personas</option>
+                <option value="20">20 personas</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label for="nombre" class="block text-sm font-semibold mb-1">Nombre completo</label>
+            <input type="text" id="nombre" placeholder="Ej. Laura Gómez" required class="w-full px-3 py-2 bg-white border-2 border-choco rounded-xl focus:outline-none focus:ring-4 focus:ring-chicle" />
+          </div>
+          <button type="submit" class="w-full bg-cereza text-white font-display font-semibold text-lg py-3 rounded-full border-2 border-choco sombra-sm hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition">
+            Enviar encargo
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-choco text-chicle py-6 text-center text-sm">
+      Calle del Lirio 3, Madrid · © 2026 ZAP Pastelería y panadería
+    </footer>
+  </body>
+</html>
